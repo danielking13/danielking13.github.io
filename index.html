@@ -2,12 +2,18 @@
 <html>
 <head>
 	<title>Daniel King</title>
-    <!-- Latest compiled and minified CSS -->
+    
+    <link rel="shortcut icon" href="Logo.png"/>
+    
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono|Sansita" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
 	<style>
 
         body {
@@ -36,9 +42,13 @@
             font-family: 'Raleway', sans-serif;
         }
 
-        #headshot {
-            width: 125px;
-            height: 150px;
+        .smallPic {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+            
         }
 
         .dark {
@@ -100,12 +110,9 @@
         span {
             font-size: 20px;
         }
-        .connect {
-            font-size: 42px;
-            padding: 20px;
-        }
         .center {
             text-align: center;
+            align-content: center;
         }
 
 
@@ -115,89 +122,87 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                    <a class="navbar-brand" href="#">DK <span class="glyphicon glyphicon-king" aria-hidden="true"></span></a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                      <li class="active"><a href="index.html">About</a></li>
-                   <!--   <li><a href="">Projects</a></li> -->
-                      <li><a href="Resume.html">Resume</a></li>
-                      <li><a href="#Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    <img class="img-responsive" src="Background.JPG" alt="Backimg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">DK</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#Contact">Contact Me</a>
+    </div>
+  </div>
+</nav>
+    <img class="img-fluid" src="Background.JPG" alt="Backimg">
     <h1>Daniel King</h1>
-
+    <img class="smallPic" src="Lightning.jpg" alt="Daniel King">
     <p id="intro">Welcome! I am an energetic, outgoing guy who loves learning more about current technology. I learn quickly and seek to keep up with the rapid production of new innovations. I have experience in coding through school, a summer internship, and some outside projects. </p>
-
 
     <div class="dark">
         <h2 id="Skills">&lt/Skills&gt</h2>
+<!--
+        <h5>Scale:</h5>
+        <h5>Novice &lt Proficient &lt Expert</h5>
+-->
         <div class="bar">
-            <div class="skill" id="java">Profficient</div>
+            <div class="skill" id="java">Proficient</div>
         </div>
         <p>Java</p>
 
-    <div class="bar">
-        <div class="skill" id="C">Profficient</div>
+        <div class="bar">
+            <div class="skill" id="C">Proficient</div>
+        </div>
+
+        <p>C</p>
+        <div class="bar">
+            <div class="skill" id="html">Proficient</div>
+        </div>
+        <p>HTML</p>
+
+        <div class="bar">
+          <div class="skill" id="css">Proficient</div>
+        </div>
+        <p>CSS</p>
+
+        <div class="bar">
+          <div class="skill" id="js">Proficient</div>
+        </div>
+        <p>JavaScript</p>
+
+        <div class="bar">
+          <div class="skill" id="sql">Novice</div>
+        </div>
+        <p>SQL</p>
+
+        <div class="bar">
+          <div class="skill" id="php">Novice</div>
+        </div>
+        <p>PHP</p>
+
+        <p>Based on skill IQ tests on <a href="https://www.pluralsight.com/">PluralSight</a></p>
     </div>
-
-    <p>C</p>
-    <div class="bar">
-        <div class="skill" id="html">Profficient</div>
-    </div>
-    <p>HTML</p>
-
-    <div class="bar">
-      <div class="skill" id="css">Profficient</div>
-    </div>
-    <p>CSS</p>
-
-    <div class="bar">
-      <div class="skill" id="js">Profficient</div>
-    </div>
-    <p>JavaScript</p>
-
-    <div class="bar">
-      <div class="skill" id="sql">Novice</div>
-    </div>
-    <p>SQL</p>
-
-    <div class="bar">
-      <div class="skill" id="php">Novice</div>
-    </div>
-    <p>PHP</p>
-
-    <p>Based on skill IQ tests on <a href="https://www.pluralsight.com/">PluralSight</a></p>
-    </div>
-
-
-        <!--This is the target for the Contact item on the navbar -->
-        <a name="Contact"></a>
-
-        <h1>Connect with me through: </h1>
-    <div class="container center">
-        <i class="fa fa-linkedin-square connect"><a href="https://www.linkedin.com/in/danielking96" target="_blank"> LinkedIn</a></i>
-        <i class="fa fa-github connect"><a href="https://github.com/danielking13" target="_blank"> GitHub</a></i>
-
-        <a href="mailto:drkwkd@mail.missouri.edu" style="margin: 20px; margin-bottom: 50px;" class="btn btn-info btn-lg">
-          <span class="glyphicon glyphicon-envelope"></span> drkwkd@mail.missouri.edu
-        </a>
-        <!--
-            <h5>© 2017 Daniel King </h5>
-         -->
-
-    </div>
-
+    
+    <h1>Connect with me through: </h1>
+    <a name="Contact"></a>
+    <div class="container-fluid center">
+        
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <a href="mailto:drkwkd@mail.missouri.edu">
+                  <span class="fa fa-envelope fa-5x" style="color: black;"></span>   
+                </a>
+            </div>
+            <div class="col-sm-2">
+                <a href="https://www.linkedin.com/in/danielking96" target="_blank"><i class="fa fa-linkedin-square fa-5x"></i></a>
+            </div>
+            <div class="col-sm-2">
+                <a href="https://github.com/danielking13" target="_blank"><i class="fa fa-github fa-5x" style="color: black"></i></a>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>     
+    </div>    
+    <br>
 </body>
 </html>
