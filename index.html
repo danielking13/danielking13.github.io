@@ -3,7 +3,7 @@
 <head>
 	<title>Daniel King</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="Logo.png"/>
+    <link rel="shortcut icon" href="/Images/Logo.png"/>
     
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono|Sansita" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,16 +28,12 @@
 
         }
         h2 {
-            margin: 20px auto;
             padding: 20px;
             text-align: center;
             font-family: 'Roboto Mono', monospace;
         }
 
-        #intro {
-            text-align: justify;
-            margin: 20px auto;
-            padding: 40px;
+        .intro {
             font-size: 16pt;
             font-family: 'Raleway', sans-serif;
         }
@@ -51,8 +47,7 @@
             
         }
 
-        .dark {
-            background-color: #445;
+        .darkText {
             color: ghostwhite;
         }
 
@@ -117,29 +112,36 @@
 
 
 	</style>
-
-    <script></script>
-
+    <script>
+        $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">DK</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#Contact">Contact Me</a>
-    </div>
-  </div>
-</nav>
-    <img class="img-fluid" src="Background.JPG" alt="Backimg">
+      <a class="navbar-brand" href="#">DK</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#Contact">Contact Me</a>
+          <a class="nav-item nav-link" href="#Resume">Resume</a>
+        </div>
+      </div>
+    </nav>
+<!--    <img class="img-fluid" src="Background.JPG" alt="Backimg">-->
     <h1>Daniel King</h1>
-    <img class="smallPic" src="Lightning.jpg" alt="Daniel King">
-    <p id="intro">Welcome! I am an energetic, outgoing guy who loves learning more about current technology. I learn quickly and seek to keep up with the rapid production of new innovations. I have experience in coding through school, a summer internship, and some outside projects. </p>
-
-    <div class="dark">
+    <img class="smallPic" src="/Images/Lightning.jpg" alt="Daniel King">
+    
+    <div class="container-fluid">
+        <p class="intro">Welcome! My name is Daniel, and I am an energetic, outgoing guy who loves current technology. I am especially intrigued by the bleeding edge of innovation, such as artificial intelligence. This year, I am a senior at the University of Missouri, majoring in computer science with a minor in math. I learn quickly and seek to keep up with the rapid production of new innovations. I have experience in coding through school, a couple summer internships, and some group projects. In my spare time, you can find me hiking or working out at the gym. 
+        </p>
+    </div>
+    
+    <div class="container-fluid darkText bg-dark">
         <h2 id="Skills">&lt/Skills&gt</h2>
 <!--
         <h5>Scale:</h5>
@@ -183,10 +185,12 @@
         <p>Based on skill IQ tests on <a href="https://www.pluralsight.com/">PluralSight</a></p>
     </div>
     
-    <h1>Connect with me through: </h1>
+    
     <a name="Contact"></a>
     <div class="container-fluid center">
-        
+        <h1>Connect with me through: </h1>
+        <br>
+        <br>
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
@@ -204,5 +208,18 @@
         </div>     
     </div>    
     <br>
+    <br>
+    <br>
+    <br>
+    
+    <a name="Resume"></a>
+    <div class="container-fluid darkText bg-dark">
+        <h1>Resume</h1>
+        <p class="center">Click the button below to download my resume!</p>
+        <div class="center">
+            <a class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Resume is in .docx format" href="/resume/Daniel%20Resume%20CS.docx" download> My Resume</a>
+        </div>
+       <br> 
+    </div>
 </body>
 </html>
