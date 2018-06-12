@@ -1,191 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Daniel King</title>
+    <title>Daniel King</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/Images/Logo.png"/>
-    
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono|Sansita" rel="stylesheet">
+    <link rel="shortcut icon" href="/Images/Logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!-- Latest compiled and minified CSS -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono|Sansita" rel="stylesheet">
+
+    <!--    Add my stylesheet    -->
+    <link rel="stylesheet" type="text/css" href="CustomStyles.css" />
+
+    <!-- Latest compiled and minified CSS -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-	<style>
 
-        body {
-            background-color: #E9E9E9;
-            margin: 0;
-        }
-        h1 {
-            padding: 10px;
-            text-align: center;
-            font-size: 40pt;
-            font-family: 'Raleway', sans-serif;
-
-        }
-        h2 {
-            padding: 20px;
-            text-align: center;
-            font-family: 'Roboto Mono', monospace;
-        }
-
-        .intro {
-            font-size: 16pt;
-            font-family: 'Raleway', sans-serif;
-        }
-
-        .smallPic {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            display: block;
-            margin: auto;
-            
-        }
-
-        .darkText {
-            color: ghostwhite;
-        }
-
-        .bar {
-            margin: 20px;
-            width: 60%;
-            float: left;
-            background-color: #ccc;
-        }
-        .skill {
-            text-align: right;
-            padding-right: 20px;
-            line-height: 35px;
-            color: white;
-        }
-
-        p {
-            text-align: left;
-            padding: 25px;
-            font-family: monospace;
-            font-size: 22px;
-        }
-
-        #java {
-            width: 75%;
-            background-color: #49F;
-        }
-
-        #C {
-            width: 72%;
-            background-color: #49F;
-        }
-
-        #html {
-            width: 77%;
-            background-color: #49F;
-        }
-        #css {
-            width: 70%;
-            background-color: #49F;
-        }
-        #js {
-            width: 55%;
-            background-color: #49F;
-        }
-        #sql {
-            width: 40%;
-            background-color: #49F;
-        }
-        #php {
-            width: 35%;
-            background-color: #49F;
-        }
-
-        span {
-            font-size: 20px;
-        }
-        .center {
-            text-align: center;
-            align-content: center;
-        }
-
-
-	</style>
+    <script src="less.js" type="text/javascript"></script>
     <script>
-        $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
+        less.watch();
+
+    </script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
         });
+
     </script>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">DK</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">DK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#Contact">Contact Me</a>
-          <a class="nav-item nav-link" href="#Resume">Resume</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#Skills">Skills</a>
+                <a class="nav-item nav-link" href="#Contact">Contact Me</a>
+                <a class="nav-item nav-link" href="#Resume">Resume</a>
+            </div>
         </div>
-      </div>
     </nav>
-<!--    <img class="img-fluid" src="Background.JPG" alt="Backimg">-->
-    <h1>Daniel King</h1>
-    <img class="smallPic" src="/Images/Lightning.jpg" alt="Daniel King">
+    <!--    <img class="img-fluid" src="Background.JPG" alt="Backimg">-->
     
+
     <div class="container-fluid">
-        <p class="intro">Welcome! My name is Daniel, and I am an energetic, outgoing guy who loves current technology. I am especially intrigued by the bleeding edge of innovation, such as artificial intelligence. This year, I am a senior at the University of Missouri, majoring in computer science with a minor in math. I learn quickly and seek to keep up with the rapid production of new innovations. I have experience in coding through school, a couple summer internships, and some group projects. In my spare time, you can find me hiking or working out at the gym. 
+        <h1>Daniel King</h1>
+        <img class="smallPic" src="/Images/Lightning.jpg" alt="Daniel King">
+        <p class="intro">Welcome! My name is Daniel, and I am an energetic, outgoing guy who loves current technology. I am especially intrigued by the bleeding edge of innovation, such as artificial intelligence. This year, I am a senior at the University of Missouri, majoring in computer science with a minor in math. I learn quickly and seek to keep up with the rapid production of new innovations. I have experience in coding through school, a couple summer internships, and some group projects. In my spare time, you can find me hiking or working out at the gym.
         </p>
     </div>
-    
-    <div class="container-fluid darkText bg-dark">
+
+    <div class="container-fluid darkText bg-dark center">
         <h2 id="Skills">&lt/Skills&gt</h2>
-<!--
+        <!--
         <h5>Scale:</h5>
         <h5>Novice &lt Proficient &lt Expert</h5>
+
+        update these bars // change javascript to JS?
 -->
+
+        <div class="bar">
+            <div class="skill" id="csharp">Proficient</div>
+        </div>
+        <p>C#</p>
+        
         <div class="bar">
             <div class="skill" id="java">Proficient</div>
         </div>
         <p>Java</p>
-
-        <div class="bar">
-            <div class="skill" id="C">Proficient</div>
-        </div>
-
-        <p>C</p>
+        
         <div class="bar">
             <div class="skill" id="html">Proficient</div>
         </div>
         <p>HTML</p>
 
         <div class="bar">
-          <div class="skill" id="css">Proficient</div>
+            <div class="skill" id="css">Proficient</div>
         </div>
         <p>CSS</p>
 
         <div class="bar">
-          <div class="skill" id="js">Proficient</div>
+            <div class="skill" id="js">Proficient</div>
         </div>
-        <p>JavaScript</p>
+        <p>JS</p>
 
         <div class="bar">
-          <div class="skill" id="sql">Novice</div>
+            <div class="skill" id="sql">Proficient</div>
         </div>
         <p>SQL</p>
 
         <div class="bar">
-          <div class="skill" id="php">Novice</div>
+            <div class="skill" id="php">Novice</div>
         </div>
         <p>PHP</p>
 
-        <p>Based on skill IQ tests on <a href="https://www.pluralsight.com/">PluralSight</a></p>
+        <p>Based on skill IQ tests on <a href="https://www.pluralsight.com/">PluralSight</a> and work experience</p>
     </div>
-    
-    
+
+
     <a name="Contact"></a>
     <div class="container-fluid center">
         <h1>Connect with me through: </h1>
@@ -199,27 +119,28 @@
                 </a>
             </div>
             <div class="col-sm-2">
-                <a href="https://www.linkedin.com/in/danielking96" target="_blank"><i class="fa fa-linkedin-square fa-5x"></i></a>
+                <a href="https://www.linkedin.com/in/danielking96" target="_blank"> <i class="fa fa-linkedin-square fa-5x"></i></a>
             </div>
             <div class="col-sm-2">
-                <a href="https://github.com/danielking13" target="_blank"><i class="fa fa-github fa-5x" style="color: black"></i></a>
+                <a href="https://github.com/danielking13" target="_blank"> <i class="fa fa-github fa-5x" style="color: black"></i></a>
             </div>
             <div class="col-sm-3"></div>
-        </div>     
-    </div>    
+        </div>
+    </div>
     <br>
     <br>
     <br>
     <br>
-    
+
     <a name="Resume"></a>
-    <div class="container-fluid darkText bg-dark">
+    <div class="container-fluid darkText bg-dark" id="Resume">
         <h1>Resume</h1>
         <p class="center">Click the button below to download my resume!</p>
         <div class="center">
             <a class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Resume is in .docx format" href="/resume/Daniel%20Resume%20CS.docx" download> My Resume</a>
         </div>
-       <br> 
+        <br>
     </div>
 </body>
+
 </html>
