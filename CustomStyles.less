@@ -1,4 +1,6 @@
 @barColor: #49F;
+@dark: #333;
+
 body {
     background-color: #E9E9E9;
 }
@@ -43,8 +45,8 @@ h2 {
 }
 
 .skill {
-    text-align: right;
-    padding-right: 20px;
+    text-align: left;
+    padding-left: 20px;
     line-height: 35px;
     color: white;
 }
@@ -101,4 +103,16 @@ span {
     width: percentage(85/@scale);
     background-image: svg-gradient(to right, blue, @barColor + 20);
 }
+
+i.fa.fa-envelope:hover, i.fa.fa-github:hover {
+    color: @dark - 40;
+}
+
+i.fa.fa-envelope, i.fa.fa-github  {
+    color: @dark; 
+}
+.OtherSkills{
+    margin: auto;
+}
+
 
